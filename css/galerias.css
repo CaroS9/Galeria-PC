@@ -1,0 +1,21 @@
+body{
+    background-color: #fff;
+    margin: 1em auto;
+    max-width: 1200px;
+}
+
+img{
+    max-width: 100%; /*para que no desborden su contenedor*/
+    /* margin: 0px; */
+    display: block; /* para quitarle el margen fantasma con el que aparecen siempre las imagenes*/
+    outline: 2px solid #fff;
+    /* outline-offset: -5px; */  /* para que el borde se meta para adentro*/
+    /* padding: auto; */
+}
+
+.galeria{
+    columns: 5 240px;
+    column-gap: .2em;
+    /* padding: auto; */
+    
+}
