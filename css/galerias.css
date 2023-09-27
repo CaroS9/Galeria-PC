@@ -1,21 +1,181 @@
-body{
-    background-color: #fff;
-    margin: 1em auto;
-    max-width: 1200px;
+body {
+    /* background-color: #fff; */
+    margin: 2em;
+    /* max-width: 1200px; */
+    /* opacity: .5; */
 }
+:root{
+    /*Paleta de colores del proyecto*/
+    --logo-5: #1A7352;
+    --logo-1:#1C5948;   
+    --logo-2:#26735D;
+    --logo-4: #1D7353;
+    --logo-3: #C2F2E5;
+    --logo-3-600: rgb(194, 242, 229, 0.6);
+    --triada-logo-1: rgb(116, 166, 152); 
+    --triada-logo-1-500:  rgb(116, 166, 152, .5); 
+    --triada-logo-1-800:  rgb(116, 166, 152, .8); 
+    --triada-logo-2: #efdaf2;
+    --triada-logo-3: #C2F2E5;
+    --triada-logo-5: #A69B7C; 
+    --triada-logo-4: #F2DfAA; 
+    --triada-logo-6: #33A89F; 
+    --triada-logo-7: #F56EE5; 
+    --triada-logo-8: #62F5E9;
+    --triada-logo-9: #F5D449;
+    --triada-logo-10: #A8933B;
+    --fondo2-1: #B0B2D9 ;
+    --fondo2-2: #606EBF;
+    --fondo2-3: #8F9AD9;
+    --fondo2-4:#D9D2B0 ;
+    --fondo2-5:#BF9595 ;
+
+            /* FONDO LAMINA PILI */
+
+    --fondop-1: #8d95a6;
+    --fondop-2: #204473;
+    --fondop-3: #a6a158;
+    --fondop-4: #a6a2cd;
+    --fondop-5: #8c855e;
+
+    --triada-fondop-1:#595426;
+    --triada-fondop-2: #689ca6;
+    --triada-fondop-3: #a69e58;
+    --triada-fondop-4:#A64770;
+    --triada-fondop-5:#592b3f;
+    --boton-1: #A64770;
+    --boton-2: #6898A6;
+    --boton-3: #B7A058;
+}
+
+/* body {
+    background-image: url(../imagenes/fondos/pinceles8.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} */
+
+img {
+    max-width: 100%;
+    /*para que no desborden su contenedor*/
+    margin-bottom: .25em;
+    display: block;
+    /* para quitarle el margen fantasma con el que aparecen siempre las imagenes*/
+    outline: 2px solid #fff;
+    /* outline-offset: -5px; */
+    /* para que el borde se meta para adentro*/
+    /* padding: auto; */
+}
+/* .contenedor-galerias:hover .imagen{
+    transform: scale(1.5);
+  } */
+/* 
+a {
+    text-decoration: none;
+} */
+
+.galeria {
+    columns: 3 240px;
+    column-gap: .25em;
+    /* padding: auto; */
+
+}
+.contenedor-galerias{
+    background-color: #a6a158 ;
+    /* opacity: .5; */
+}
+
+/* .navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--espacio-8) var(--espacio-16);
+    display: inline-block;
+    /* inline - block sigue siendo un elemento en linea pero se puede modificar su tamaño y sus propiedades de caja*/
+    /* transition: background-color .4s ease-in-out;
+    position: relative;
+}
+
+.navbar__link:hover {
+    padding: var(--espacio-8) var(--espacio-16);
+    /* 8 arriba y abajo y 16 a los costados*/
+    /* background-color: var(--primario-900);
+} */ 
+
+.titulo_galerias{
+
+    color: var(--fondop-3);
+    text-align:center ;
+    opacity: .8;
+    text-shadow: 1px 1px;
+    padding-bottom: 20px;
+}
+
+             /* -------------------------------- */
+
+.imagen{
+    opacity: .7;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .imagen:hover{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  /* .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  } */
+
+  /* .contenedor-imagen:hover .imagen{
+    transform: scale(1.5);
+  } */
+
+   /* .middle:hover {
+    opacity: 0.9;
+    transition: .5s ease;
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
 
 img{
-    max-width: 100%; /*para que no desborden su contenedor*/
-    /* margin: 0px; */
-    display: block; /* para quitarle el margen fantasma con el que aparecen siempre las imagenes*/
-    outline: 2px solid #fff;
-    /* outline-offset: -5px; */  /* para que el borde se meta para adentro*/
-    /* padding: auto; */
+    opacity: .7;
 }
 
-.galeria{
-    columns: 5 240px;
-    column-gap: .2em;
-    /* padding: auto; */
-    
-}
+img:hover{
+    opacity: 1;
+} */
+/* .text {
+    opacity: 0;
+    background-color: rgb(255, 255, 255, .5);
+    color: rgb(110, 109, 109);
+    font-size: 32px;
+    padding: 16px 32px;
+    text-align: center;
+        
+  }
+   .text:hover{
+    opacity: 1;
+    background-color: rgb(255, 255, 255, .5);
+    color: rgb(110, 109, 109);
+    font-size: 32px;
+    padding: 16px 32px;
+    text-align: center;
+  } */

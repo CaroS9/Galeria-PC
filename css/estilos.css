@@ -21,12 +21,12 @@
     background-size: cover ;
 }
 
-.fondo-footer{
+/* .fondo-footer{
     background-image: url(../imagenes/fondos/pinturas11.jpeg) ;
      background-repeat: no-repeat ;
      background-position: center  center ;
      background-size: cover ;
- }
+ } */
 
 :root{
     /*Paleta de colores del proyecto*/
@@ -35,7 +35,10 @@
     --logo-2:#26735D;
     --logo-4: #1D7353;
     --logo-3: #C2F2E5;
-    --triada-logo-1: #74A698; 
+    --logo-3-600: rgb(194, 242, 229, 0.6);
+    --triada-logo-1: rgb(116, 166, 152); 
+    --triada-logo-1-500:  rgb(116, 166, 152, .5); 
+    --triada-logo-1-800:  rgb(116, 166, 152, .8); 
     --triada-logo-2: #efdaf2;
     --triada-logo-3: #C2F2E5;
     --triada-logo-5: #A69B7C; 
@@ -50,11 +53,22 @@
     --fondo2-3: #8F9AD9;
     --fondo2-4:#D9D2B0 ;
     --fondo2-5:#BF9595 ;
-    --triada-fondo-1:#4F588C;
-    --triada-fondo-2: #D9B2A5;
-    --triada-fondo-3: #8F9AD9;
-    --triada-fondo-4:#A3D979;
-    --triada-fondo-5:#6D8C56;
+
+            /* FONDO LAMINA PILI */
+
+    --fondop-1: #8d95a6;
+    --fondop-2: #204473;
+    --fondop-3: #a6a158;
+    --fondop-4: #a6a2cd;
+    --fondop-4-500: rgb(166, 162, 205, .5);
+    --fondop-4-700: rgb(166, 162, 205, .7);
+    --fondop-5: #8c855e;
+
+    --triada-fondop-1:#595426;
+    --triada-fondop-2: #689ca6;
+    --triada-fondop-3: #a69e58;
+    --triada-fondop-4:#A64770;
+    --triada-fondop-5:#592b3f;
     --boton-1: #A64770;
     --boton-2: #6898A6;
     --boton-3: #B7A058;
@@ -62,6 +76,7 @@
    
     --dark-solid: #1F1F1F;
     --dark-900: rgba(31, 31, 31,0.9);
+    --dark-700: rgba(31, 31, 31,0.7);
     --dark-500: rgba(31, 31, 31,0.5);
     --dark-300: rgba(31, 31, 31,0.3);
    
@@ -70,12 +85,21 @@
   
    
    /* Tipografía*/
-   --parrafo-fuente: 'Roboto', sans-serif;
+   --body: 'Roboto', sans-serif;
    --titulo-header: 'Raleway', sans-serif;
-   --titulos-fuente: 'Roboto', sans-serif;
+  
+   .promociones{
+        color: var(--claro-solid);
+        padding: 50px;
+        background-image: url(../imagenes/fondos/headerp-2.jpg) ;
+         background-repeat: no-repeat ;
+         background-position: center  center ;
+         background-size: cover ;
+    
+   }
    
    /* Font-sizes */
-   --font-display: 4.6em;
+   /* --font-display: 4.6em;
    --font-jumbo: 3.8em;
    --font-xlarge: 3em;
    --font-large: 2.4em;
@@ -83,7 +107,7 @@
    --font-small: 1.6em;
    --font-xsmall: 1.4em;
    
-   /* Spacings */
+   Spacings
    --spacing-128: 12.8rem;
    --spacing-68: 6.8rem;
    --spacing-36: 3.6rem;
@@ -93,13 +117,59 @@
    --spacing-16: 1.6rem;
    --spacing-12: 1.2rem;
    --spacing-8: 0.8rem;
-   }
+   } */
    /* body{
     background-image: url(../imagenes/fondos/pinceles2.jpg) ;
     background-repeat: no-repeat ;
     background-position: center  center ;
     background-size: cover ;
    } */
+
+   
    body{
     background-color: #f5f5f5;
+    font-family: var(--body);
    }
+
+   a{
+    text-decoration: none;}       /*saca el subrayado de los enlaces*/
+    /* color: inherit;         /* que tome el color que viene heredado
+    font-family: inherit;  */
+   
+  
+} 
+
+/* .navbar{
+    display: flex; /* pone al logo y al menu en  linea
+    justify-content: space-between;
+    align-items: center; /* pone al logo y almenu en la misma linea
+} */
+
+   img{
+    max-width: 100%;
+    height: auto;
+   }
+
+   
+    
+   .nav-link:hover , .dropdown-item:hover {
+    padding: 8px 16px; /* 8 arriba y abajo y 16 a los costados*/
+    background-color: var(--fondop-1);
+    max-width: 100%;
+}
+
+/* span{
+    padding-right: 150px;
+} */
+
+ .navbar__link{
+    font-size: var(--font-medium);
+    padding: var(--espacio-8) var(--espacio-16);
+    display: inline-block;   /* inline - block sigue siendo un elemento en linea pero se puede modificar su tamaño y sus propiedades de caja*/
+    transition: background-color .4s ease-in-out;
+    position: relative;
+}
+/* .navbar__link:hover{
+    padding: var(--espacio-8) var(--espacio-16); 8 arriba y abajo y 16 a los costados */
+    /* background-color: var(--primario-900);
+} */  
