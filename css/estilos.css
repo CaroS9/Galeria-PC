@@ -98,26 +98,7 @@
     
    }
    
-   /* Font-sizes */
-   /* --font-display: 4.6em;
-   --font-jumbo: 3.8em;
-   --font-xlarge: 3em;
-   --font-large: 2.4em;
-   --font-medium: 1.8em;
-   --font-small: 1.6em;
-   --font-xsmall: 1.4em;
-   
-   Spacings
-   --spacing-128: 12.8rem;
-   --spacing-68: 6.8rem;
-   --spacing-36: 3.6rem;
-   --spacing-28: 2.8rem;
-   --spacing-24: 2.4rem;
-   --spacing-20: 2rem;
-   --spacing-16: 1.6rem;
-   --spacing-12: 1.2rem;
-   --spacing-8: 0.8rem;
-   } */
+  
    /* body{
     background-image: url(../imagenes/fondos/pinceles2.jpg) ;
     background-repeat: no-repeat ;
@@ -146,8 +127,10 @@
 } */
 
    img{
+    /* display: block; */
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
    }
 
    
