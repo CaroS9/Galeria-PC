@@ -47,13 +47,17 @@ body {
     --boton-2: #6898A6;
     --boton-3: #B7A058;
 }
+header{
+  display: flex;
+  justify-content: left;
+  /* padding-bottom: 2rem;
+  margin-bottom: 2rem; */
+  
+}
 
-/* body {
-    background-image: url(../imagenes/fondos/pinceles8.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-} */
+.logo{
+  margin-right: 25px;
+}
 
 img {
     max-width: 100%;
@@ -68,13 +72,7 @@ img {
     border-radius: 8px;
 
 }
-/* .contenedor-galerias:hover .imagen{
-    transform: scale(1.5);
-  } */
-/* 
-a {
-    text-decoration: none;
-} */
+
 
 .galeria {
     columns: 4 240px;
@@ -104,12 +102,25 @@ a {
 } */ 
 
 .titulo_galerias{
-
+   
     color: var(--fondop-3);
     text-align:center ;
     opacity: .8;
     text-shadow: 1px 1px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+
+h2, cite{
+  color: var(--fondop-3);
+  text-align: center;
+ 
+  
+}
+
+cite{
+  text-decoration: underline;
+  font-family: raleway;
 }
 
              /* -------------------------------- */
@@ -126,11 +137,7 @@ a {
 
   .imagen:hover{
     opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    
   }
 
   .contenedor-imagen{
@@ -139,7 +146,27 @@ a {
 
   .contenedor-imagen-boton-descripcion{
     position: absolute;
+    bottom: 2%; right:2%;
+    border-radius: 10px;
+    
   }
+
+  .contenedor-imagen-boton-descripcion button{
+    background-color: var(--fondop-1); 
+    border-radius: 8px; 
+    border: 0; 
+    box-shadow: 2px 2px 15px #b19292;
+  }
+
+  .contenedor-imagen-boton-descripcion button a{
+    color: white; 
+    text-decoration: none; 
+    padding: 1rem 1rem; 
+    font-size: larger; 
+    font-weight: bold;
+  }
+
+                  /* ------------------------------------ */
   /* .middle {
     transition: .5s ease;
     opacity: 0;
