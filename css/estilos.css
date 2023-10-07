@@ -120,6 +120,12 @@
   
 } 
 
+cite{
+    text-decoration: underline;
+    font-family: raleway;
+  }
+
+
 /* .navbar{
     display: flex; /* pone al logo y al menu en  linea
     justify-content: space-between;
@@ -133,6 +139,12 @@
     border-radius: 8px;
    }
 
+   #ultimosTrabajos, #coleccionBailaoras,
+   #coleccionElMilagro, #coleccionLaminasAcuarela,
+   #coleccionLaminasTinta, #coleccionLoros,
+   #coleccionMariposas{
+   box-shadow: 2px 2px 2px #b19292
+   }
    
     
    .nav-link:hover , .dropdown-item:hover {
