@@ -111,11 +111,12 @@ img {
     padding-top: 0;
 }
 
+/* h2{
+  border-top: rgb(22, 22, 22);
+} */
 h2, cite{
   color: var(--fondop-3);
-  text-align: center;
- 
-  
+  text-align: center;  
 }
 
 cite{

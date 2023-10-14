@@ -29,6 +29,8 @@
 
         <header class="container-fluid m-4" id="inicio">
 
+            <!-- Redes,mail y Whatsapp -->
+
             <div class="row">
 
                 <p class="col-lg-6 col-md-6 fs-5 text-black-50"> Contáctame por: <a
@@ -48,6 +50,7 @@
                 </p>
             </div>
 
+            <!-- NAVBAR: Nombre y opciones de navegación -->
 
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light m-0 ">
@@ -60,13 +63,12 @@
                             type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
-                            <!--style="background-color: var(--fondo2-2);" -->
                         </button>
                         <div class="collapse navbar-collapse text-start fs-5" id="navbarText">
                             <ul class="navbar-nav me-auto mb-lg-0">
                                 <li class="nav-item  fw-bold px-4">
-                                    <!--active f4-5 --> <a class="nav-link active  " style="color:  var(--claro-solid);"
-                                        aria-current="page" href="#sobreMi">Sobre mi</a>
+                                    <a class="nav-link active  " style="color:  var(--claro-solid);" aria-current="page"
+                                        href="#sobreMi">Sobre mí</a>
                                 </li>
 
                                 <li class="nav-item fw-bold px-4">
@@ -91,17 +93,17 @@
                                         </li>
                                         <li><a class="dropdown-item  text-black-50 fw-bold"
                                                 style="background-color: var(--claro-bg-solid)"
-                                                href="#coleccionLoros">Loros</a>
+                                                href="#coleccionEnVuelo">En vuelo ...</a>
                                         </li>
 
                                         <li><a class="dropdown-item  text-black-50 fw-bold"
                                                 style="background-color: var(--claro-bg-solid)"
-                                                href="#coleccionMariposas">Mariposas</a>
+                                                href="#coleccionEllas">Ellas</a>
                                         </li>
 
                                         <li><a class="dropdown-item  text-black-50 fw-bold"
                                                 style="background-color: var(--claro-bg-solid)"
-                                                href="#coleccionLaminasAcuarela">Acuarelas</a>
+                                                href="#coleccionTecnicasMixtas">Técnicas mixtas</a>
                                         </li>
                                         <li><a class="dropdown-item  text-black-50 fw-bold"
                                                 style="background-color: var(--claro-bg-solid)"
@@ -122,26 +124,34 @@
                     </div>
                 </nav>
 
+                <!-- Aviso de actualización -->
+
             </div>
             <p class="text-center fs-5  text-black-50">Última actualización: octubre-2023</p>
         </header>
 
 
-        <main>
-            <!-- botón: volver -->
-            <div class="position-fixed  m-2" style="bottom: 15%; right:2%;">
-                <button type="button"
-                    style="background-color: var(--triada-logo-5); border-radius: 1px; border: 0; box-shadow: 2px 2px 15px #b19292;">
-                    <a href="#inicio" class="fw-bold"
-                        style=" color: white; text-decoration: none; padding:1rem; font-size:smaller; font-weight: 500;">
-                        Volver al inicio</a></button>
-            </div>
 
+        <!-- botón: volver -->
+
+        <div class="position-fixed  m-2" style="bottom: 20%; right:2%;">
+            <button type="button"
+                style="background-color: var(--triada-logo-1); border-radius: 1px; border: 0; box-shadow: 2px 2px 15px #221c1c;">
+                <a href="#inicio" class="fw-bold"
+                    style=" color: white; text-decoration: none; padding:1rem; font-size:smaller; font-weight: 500;">
+                    Volver al inicio</a></button>
+        </div>
+
+        <!-- tarjeta principal -->
+
+        <main>
             <div class="container bg-white" style="box-shadow: 2px 2px 8px rgb(12, 12, 12) ;">
 
                 <!-- Sobre mí -->
                 <section class="row justify-content-center  p-3 text-center mt-3 mb-3 bg-white" id="sobreMi">
                     <div class="col-12 col-md-7">
+
+                        <!-- Propósito de la Galería -->
 
                         <h1 class="pt-3 fs-2 ">Me alegra mucho abrirte las puertas de mi galería y mostrarte mi
                             propuesta para Renovar el Estilo de los Ambientes
@@ -156,6 +166,7 @@
 
                     </div>
 
+                    <!-- Quién soy -->
 
                     <section class="row justify-content-center  p-3 text-center mt-4">
                         <div class="col-12 col-md-7 mb-4">
@@ -164,16 +175,18 @@
 
                     </section>
 
-                    <section class="row justify-content-evenly mb-1">
+                    <!-- Foto Pilar  y su historia-->
+
+                    <section class="row justify-content-evenly m-4">
                         <div class="col-12 col-lg-5 d-flex  mb-4"
-                            style="background-color: var(--triada-logo-1-500); border-radius: 8px;">
+                            style="background-color: var(--triada-logo-1); border-radius: 8px;">
                             <!-- la img de pili anduvo conb width=400 y height=440 -->
                             <img src="imagenes/foto pilar.png" alt="Pilar Crespo" style="margin: 0 auto;">
 
                         </div>
-                        <div class="col-12 col-lg-5 d-flex m-4">
+                        <div class="col-12 col-lg-5 d-flex m-0 ">
                             <div>
-                                <p class="fs-5 pt-3"> Como hija de inmigrantes españoles mi infancia estuvo rodeada de
+                                <p class="fs-5 pt-0"> Como hija de inmigrantes españoles mi infancia estuvo rodeada de
                                     anécdotas, música, comidas, olores, cuentos e historias de otras tierras y a pesar
                                     de ello, tengo necesidad de pintar a personas y lugares que me identifican, que
                                     hablan del lugar donde nací y del cual me siento parte.</p>
@@ -186,241 +199,180 @@
                         </div>
                     </section>
 
-                <!-- Úlimos trabajos -->
-                    <section class="row justify-content-center text-center mt-4" id="ultimosTrabajos">
-                        <div class="col-12 col-md-7">
+                    <!-- Úlimos trabajos -->
+
+                    <section class="row justify-content-center text-center mt-4 px-0" id="ultimosTrabajos">
+                        <div class="col-12 col-md-7 m-5" id="p2023">
                             <h2 class="pt-3 fs-2 border-top">Últimos trabajos</h2>
+                            <!-- </div>                        
+                        <div class="col-12 col-md-7 d-flex m-5 " > -->
+                            <br><br>
+                            <a href="galerias/ultimos_trabajos.html" target="_blank"> <img
+                                    src="imagenes/ultimos_trabajos/calma-3-38-x-33.webp" alt="calma 3"></a>
+
+                            <br><br>
                         </div>
 
-                    <!-- </section> -->
-
-                    <!-- <section class="row justify-content-evenly"> -->
-
-                        <div class="col-12 col-lg-8 d-flex m-5 ">
-                            <!-- <span  style=" margin: 0 auto; "> -->
-                            <a href="galerias/bailaoras.html" target="_blank"> <img
-                                    src="imagenes/bailaoras/5 - 24 x 18.webp" alt="Nuevos trabajos"></a>
-                            <!-- </span> -->
-                        </div>
                     </section>
-                        <!-- <div class="col-12 col-lg-6 d-flex mt-5 text-start">
-                                <div style=" margin: 0 auto;">
-                                    <p class="px-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                                </div>
-                            </div> -->
 
-                <!-- Mis Colecciones -->
+                    <!-- Mis Colecciones -->
 
-                        <section class="row justify-content-center  p-5  mt-4">
-                            <div class="col-12 col-md-7 mb-0">
-                                <h2 class="pt-3 fs-2 border-top">Mis Colecciones</h2>
-                            </div>
+                    <section class="row justify-content-center  p-5  mt-4">
+                        <div class="col-12 col-md-7 mb-0">
+                            <h2 class="pt-3 fs-2 border-top">Mis Colecciones</h2>
+                        </div>
 
-                        </section>
+                    </section>
 
-                        <section class="row justify-content-around mb-6">
-                            <div class="col-12 col-lg-4 mt-2 " id="coleccionBailaoras">
-                                <br>
-                                <h3 class=" px-4 ">Bailaoras</h3>
+                    <section class="row justify-content-around mb-6">
+                        <div class="col-12 col-lg-4 mt-2 " id="coleccionBailaoras">
+                            <br>
+                            <h3 class=" px-4 ">Bailaoras</h3>
 
-                                <br>
-                                <a href="galerias/bailaoras.html" target="_blank"> <img
-                                        src="imagenes/bailaoras/9 - 26 x 40.webp" alt="Bailaoras 9"></a>
-                                <br><br>
-                            </div>
+                            <br>
+                            <a href="galerias/bailaoras.html" target="_blank"> <img
+                                    src="imagenes/bailaoras/9 - 26 x 40.webp" alt="Bailaoras 9"></a>
+                            <br><br>
+                        </div>
 
-                            <div class="col-12 col-lg-4  mt-2" id="coleccionElMilagro">
-                                <br>
-                                <h3 class=" px-4 ">El Milagro Salteño</h3>
-                                <br>
-                                <a href="galerias/el_milagro.html" target="_blank"> <img
-                                        src="imagenes/el_milagro/10 Virgen.jpg" alt="El Milagro 10"></a>
-                                <br><br>
-                            </div>
+                        <div class="col-12 col-lg-4  mt-2" id="coleccionElMilagro">
+                            <br>
+                            <h3 class=" px-4 ">El Milagro Salteño</h3>
+                            <br>
+                            <a href="galerias/el_milagro.html" target="_blank"> <img
+                                    src="imagenes/el_milagro/10-cristo.webp" alt="El Milagro Cristo 10"></a>
+                            <br><br>
+                        </div>
 
-                        </section>
+                    </section>
+                    <br>
 
-                        <section class="row justify-content-around mb-6">
-                            <div class="col-12 col-lg-4 mt-2 " id="coleccionLoros">
-                                <br>
-                                <h3 class=" px-4 ">Loros</h3>
+                    <section class="row justify-content-around  mb-6">
+                        <div class="col-12 col-lg-4 mt-2 " id="coleccionEnVuelo">
+                            <br>
+                            <h3 class=" px-4 ">En vuelo ...</h3>
 
-                                <br>
-                                <a href="galerias/loros.html" target="_blank"> <img
-                                        src="imagenes/loros/14 - vendido.webp" alt="loro 14"></a>
-                                <br><br>
-                            </div>
+                            <br>
+                            
+                                <a href="galerias/en_vuelo.html" target="_blank"> <img
+                                        src="imagenes/en_vuelo/mariposas/1-oleo-sobre-lienzo-10-x-10.webp" alt="loro 14"></a>
+                            
+                        </div>
 
-                            <div class="col-12 col-lg-4  mt-2 " id="coleccionMariposas">
-                                <br>
-                                <h3 class=" px-4 ">Mariposas y Libélulas</h3>
-                                <br>
-                                <a href="galerias/mariposas_y_libelulas.html" target="_blank"> <img
-                                        src="imagenes/mariposas/1-oleo-sobre-lienzo-10-x-10.webp" alt="Mariposas 1"></a>
-                                <br><br>
-                            </div>
+                        <div class="col-12 col-lg-4  mt-2 " id="coleccionEllas">
+                            <br>
+                            <h3 class=" px-4 ">Ellas</h3>
+                            <br>
+                            <a href="galerias/ellas.html" target="_blank"> <img
+                                    src="imagenes/ellas/1-33-x-38-vendido.webp" alt="ella 1"></a>
+                            <br><br>
+                        </div>
 
-                        </section>
+                    </section>
+                    <br>
 
-                        <section class="row justify-content-around mb-6">
-                            <div class="col-12 col-lg-4 mt-2 " id="coleccionLaminasAcuarela">
-                                <br>
-                                <h3 class=" px-4 ">Láminas con acuarela</h3>
+                    <section class="row justify-content-around mb-6">
+                        <div class="col-12 col-lg-4 mt-2 " id="coleccionTecnicasMixtas">
+                            <br>
+                            <h3 class=" px-4 ">Láminas con técnicas mixtas</h3>
 
-                                <br>
-                                <a href="galerias/acuarelasas.html" target="_blank"> <img
-                                        src="imagenes/acuarelas/12-36-x-26-5.webp" alt="acuarela 12"></a>
-                                <br><br>
-                            </div>
+                            <br>
+                            <a href="galerias/mixtas.html" target="_blank"> <img src="imagenes/mixtas/12-36-x-26-5.webp"
+                                    alt="mixta 12"></a>
+                            <br><br>
+                        </div>
 
-                            <div class="col-12 col-lg-4  mt-2" id="coleccionLaminasTinta">
-                                <br>
-                                <h3 class=" px-4 ">Láminas con tinta</h3>
-                                <br>
-                                <a href="/galerias/tintas.html" target="_blank"> <img
-                                        src="imagenes/tintas/4-23.5-x-21.webp" alt="tinta 4"></a>
-                                <br><br>
-                            </div>
+                        <div class="col-12 col-lg-4  mt-2" id="coleccionLaminasTinta">
+                            <br>
+                            <h3 class=" px-4 ">Láminas con tinta</h3>
+                            <br>
+                            <a href="/galerias/tintas.html" target="_blank"> <img src="imagenes/tintas/4-23.5-x-21.webp"
+                                    alt="tinta 4"></a>
+                            <br><br>
+                        </div>
 
-                        </section>
-                        <!-- 
-                         <section class="row justify-content-around mb-1"> -->
-                        <!-- <div class="col-12 col-lg-4 mt-5 ">
-                                    
-                                        <h3 class="mt-4 px-4 ">Bailaoras</h3>
-                                        
-                                   
-                                    <a href="galerias/bailaoras.html" target="_blank"> <img
-                                            src="imagenes/bailaoras/9 - 26 x 40.webp" alt="Bailaoras 9"></a>
-                                  
-                                </div>
-
-                                <div class="col-12 col-lg-4  mt-5 ">
-                                    
-                                    <h3 class="mt-4 px-4 ">El Milagro Salteño</h3>
-                                   
-                                    <a href="galerias/el_milagro.html" target="_blank"> <img
-                                            src="imagenes/el_milagro/10 Virgen.jpg" alt="El Milagro 10"></a>
-                                   
-                                </div>
-                               
-                            </section> -->
+                    </section>
+                    <br>
 
 
 
-                        <!-- <div class="col-12 col-lg-6 d-flex m-4 align-items-center text-center"
-                                    id="coleccionLoros">
-                                    <a href="galerias/loros.html" target="_blank">
-                                        <img src="imagenes/loros/5.webp" alt="loro"></a>
-                                    <div>
-                                        <h3 class="mt-4 px-4 pb-1">Loros</h3>
-                                        <p class="px-4 fs-5">Lorem ipsum dolor sit, amet consectetur elit. </p>
-                                    </div>
-                                </div>
- -->
+                    <!-- PROMOCIONES -->
 
-                        <!-- <div class="col-12 col-lg-6 d-flex m-4 align-items-center text-start"
-                                    id="coleccionElMilagro">
-                                    <a href="galerias/el_milagro.html" target="_blank">
-                                        <img src="imagenes/el_milagro/10 Cristo.jpg" alt="el milagro"></a>
-                                    
-                                </div> -->
+                    <section class="row justify-content-center text-center " id="promociones">
 
-                        <!-- <div class="col-12 col-lg-6 d-flex m-4 align-items-center text-start"
-                                    id="coleccionMariposas">
-                                    <a href="galerias/mariposas_y_libelulas.html" target="_blank">
-                                        <img src="imagenes/mariposas/1-oleo-sobre-lienzo-10-x-10.webp"
-                                            alt="mariposas y libélulas"></a>
-                                    <div>
-                                        <h3 class="mt-4 px-4 pb-1">Voladoras</h3>
-                                        <p class="px-4 fs-5">Lorem ipsum dolor sit, amet consectetur elit. </p>
-                                    </div>
-                                </div>
-                            </section> -->
+                        <div class="col-12 col-md-7 pt-4 pb-4">
+                            <h2 class="p-3 fs-2 border-top">Promociones</h2>
+
+                            <em>
+                                <h4>Para compras de 1 sola unidad los trabajos</h4>
+                            </em>
+                            <em>
+                                <h4> de las siguientes galerías están rebajadas </h4>
+                            </em>
+                            <em>
+                                <h4>en un 10% hasta el 31-1-2024. </h4>
+                            </em>
+                            <em>
+                                <h4> Para compras de mayores cantidades:</h4>
+                            </em>
+                        </div>
 
 
-                <!-- PROMOCIONES -->
-                        <section class="row justify-content-center text-center " id="promociones">
-                            <div class="col-12 col-md-7 pt-4">
-                                <h2 class="p-3 fs-2 border-top">Promociones</h2>
-                            </div>
-
-                            <div class="col-10 fs-5 pb-5 table-responsive-md">
-                                <table class="table table-striped  table-hover " style="background-color:">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col"></th>
-                                            <th scope="col">Oferta Básica</th>
-                                            <th scope="col">Oferta Oportunidad</th>
-                                            <th scope="col">Oferta Premium</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">Bailaoras</th>
-                                            <td>Lleve 3 y pague 2</td>
-                                            <td>7 x 5</td>
-                                            <td>12 x 9</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">El Milagro</th>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Loros</th>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">Mariposas</th>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Acuarelas</th>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Tintas</th>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- <table cellpadding="20px" class="promociones ">
+                        <div class="col-12 col-md-8 fs-7 fw-bold pb-3 table-responsive-md">
+                            <table class="table table-striped  table-hover " style="background-color:">
+                                <thead>
                                     <tr>
-                                        <td class="fs-4 fw-bold ">Bailaoras</td>
-                                        <td>oferta 1</td>
-                                        <td class="px-3">oferta 2</td>
+                                        <th scope="col"></th>
+                                        <!-- <th scope="col">Oferta Básica</th> -->
+                                        <th scope="col">Oferta Oportunidad</th>
+                                        <th scope="col">Oferta Premium</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="margin: 0 auto;" scope="row">Bailaoras</th>
+                                        <!-- <td>Lleve 3 y pague 2</td> -->
+                                        <td>Lleve 3 y pague 2</td>
+                                        <td>Lleve 7 y pague 5</td>
                                     </tr>
                                     <tr>
-                                        <td class="fs-4 fw-bold">Loros</td>
-                                        <td>oferta 3</td>
-                                        <td>oferta 4</td>
+                                        <th scope="row">El Milagro</th>
+                                        <!-- <td>-</td> -->
+                                        <td>Lleve 3 y pague 2</td>
+                                        <td>Lleve 7 y pague 5</td>
                                     </tr>
                                     <tr>
-                                        <td class="fs-4 fw-bold">Pequeñas voladoras</td>
-                                        <td>oferta 5</td>
-                                        <td>oferta 6</td>
+                                        <th scope="row">Loros</th>
+                                        <!-- <td>-</td> -->
+                                        <td>Lleve 3 y pague 2</td>
+                                        <td>Lleve 7 y pague 5</td>
                                     </tr>
-                                    <tr>
-                                        <td class="fs-4 fw-bold ">El Milagro</td>
-                                        <td>oferta 7</td>
-                                        <td>oferta 8</td>
-                                    </tr>
-                                </table> -->
-                            <br><br><br><br><br><br><br><br><br>
 
-                        </section>
+                                    <tr>
+                                        <th scope="row">Mariposas</th>
+                                        <!-- <td>-</td> -->
+                                        <td>Lleve 3 y pague 2</td>
+                                        <td>Lleve 7 y pague 5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Acuarelas</th>
+                                        <!-- <td>-</td> -->
+                                        <td>Lleve 3 y pague 2</td>
+                                        <td>Lleve 7 y pague 5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tintas</th>
+                                        <!-- <td>-</td> -->
+                                        <td>Lleve 3 y pague 2</td>
+                                        <td>Lleve 7 y pague 5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </section>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
         </main>
@@ -430,8 +382,7 @@
                 <p class="text-center fs-4 fw-bold py-4 mb-0" style="font-family: var(--titulo-header) ;">La Galeria de
                     Pilar Crespo &copy;
                     <span class="fw-normal"> Todos los Derechos Reservados 2023 </span>
-                    <!-- <p class="text-end fs-5 fw-normal py-4 m-3"><img src="redes_y_favicon/favicon.ico" with="10px"> DesarrollosWeb -->
-                </p>
+                    <p class="text-end fs-5 fw-normal py-4 m-3"><img src="redes_y_favicon/favicon.ico" with="5px"> Desarrollo Web y Diseño UX/UI</p>
 
             </div>
         </footer>
