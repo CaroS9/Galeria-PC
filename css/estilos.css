@@ -4,10 +4,11 @@
 
 *,
 *::before,
-*::after, body, div {
+*::after,  div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--body);
    
 }
 /* body{
@@ -21,12 +22,6 @@
     background-size: cover ;
 }
 
-/* .fondo-footer{
-    background-image: url(../imagenes/fondos/pinturas11.jpeg) ;
-     background-repeat: no-repeat ;
-     background-position: center  center ;
-     background-size: cover ;
- } */
 
 :root{
     /*Paleta de colores del proyecto*/
@@ -87,27 +82,11 @@
    /* Tipografía*/
    --body: 'Roboto', sans-serif;
    --titulo-header: 'Raleway', sans-serif;
-  
-   .promociones{
-        color: var(--claro-solid);
-        padding: 50px;
-        background-image: url(../imagenes/fondos/headerp-2.jpg) ;
-         background-repeat: no-repeat ;
-         background-position: center  center ;
-         background-size: cover ;
-    
-   }
-   
-  
-   /* body{
-    background-image: url(../imagenes/fondos/pinceles2.jpg) ;
-    background-repeat: no-repeat ;
-    background-position: center  center ;
-    background-size: cover ;
-   } */
 
    
    body{
+    margin-top: 0;
+    padding: 0;
     background-color: #f5f5f5;
     font-family: var(--body);
    }
@@ -122,28 +101,25 @@
 
 cite{
     text-decoration: underline;
-    font-family: raleway;
+    font-family: var(--titulo-header);
   }
 
-
-/* .navbar{
-    display: flex; /* pone al logo y al menu en  linea
-    justify-content: space-between;
-    align-items: center; /* pone al logo y almenu en la misma linea
-} */
-
-   img{
+img{
     /* display: block; */
-    max-width: 100%;
     height: auto;
     border-radius: 8px;
+    max-width: 100%;
+    /*para que no desborden su contenedor*/
+     /* display: block; */
+    /* para quitarle el margen fantasma con el que aparecen siempre las imagenes*/
    }
 
    #p2023, #coleccionBailaoras,
    #coleccionElMilagro, #coleccionTecnicasMixtas,
    #coleccionLaminasTinta, #coleccionEnVuelo,
    #coleccionEllas{
-   box-shadow: 1px 2px 1px #b19292
+   box-shadow: 1px 2px 1px #b19292;
+   position: relative;
    }
    
     
@@ -153,9 +129,7 @@ cite{
     max-width: 100%;
 }
 
-/* span{
-    padding-right: 150px;
-} */
+
 
  .navbar__link{
     font-size: var(--font-medium);
@@ -164,7 +138,4 @@ cite{
     transition: background-color .4s ease-in-out;
     position: relative;
 }
-/* .navbar__link:hover{
-    padding: var(--espacio-8) var(--espacio-16); 8 arriba y abajo y 16 a los costados */
-    /* background-color: var(--primario-900);
-} */  
+  
