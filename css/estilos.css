@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;1,200;1,400;1,600;1,700&family=Roboto:wght@300;400;500&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 *,
 *::before,
@@ -89,15 +88,19 @@
     padding: 0;
     background-color: #f5f5f5;
     font-family: var(--body);
+  
    }
 
    a{
     text-decoration: none;}       /*saca el subrayado de los enlaces*/
     /* color: inherit;         /* que tome el color que viene heredado
-    font-family: inherit;  */
-   
+    font-family: inherit;  */ 
   
 } 
+
+h2{
+   border-top: 1px solid rgb(34, 28, 28, .3) ;
+}
 
 cite{
     text-decoration: underline;
@@ -128,8 +131,11 @@ img{
     background-color: var(--fondop-1);
     max-width: 100%;
 }
-
-
+.material-symbols-outlined{
+    color: #3fac8d;
+    font-weight: 500;
+}
+  
 
  .navbar__link{
     font-size: var(--font-medium);
@@ -138,4 +144,3 @@ img{
     transition: background-color .4s ease-in-out;
     position: relative;
 }
-  
